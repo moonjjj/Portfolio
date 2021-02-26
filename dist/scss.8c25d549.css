@@ -15,10 +15,19 @@ body, html {
 }
 .content-first .content-header span {
   font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.content-first .content-header span:nth-child(2) {
+  color: #fff;
+}
+.content-first .content-header span:hover, .content-first .content-header span:active {
+  transform: scale(1.2);
 }
 .content-first .content-header .img-div img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
 }
 .content-first .content-main {
   height: 100vh;
@@ -32,6 +41,29 @@ body, html {
 .content-first .content-main .main-img {
   height: 100vh;
   width: 100vw;
+}
+.content-first .content-main .main-video {
+  position: absolute;
+  top: 35%;
+  right: 14%;
+  width: 38vw;
+  height: 439px;
+}
+.content-first .content-main .greeting-main {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  letter-spacing: -1px;
+  font-size: 1.3em;
+}
+.content-first .content-main .greeting-main .greeting1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.content-first .content-main .greeting-main .greeting2 {
+  font-weight: 700;
 }
 
 .content-second {

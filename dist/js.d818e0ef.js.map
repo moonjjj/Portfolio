@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/js/index.js"],"names":["document","addEventListener","console","log"],"mappings":"AACAA,QAAQ,CAACC,gBAAT,CAA0B,kBAA1B,EAA6C,YAAU;AACnDC,EAAAA,OAAO,CAACC,GAAR,CAAY,WAAZ;AACH,CAFD","file":"js.d818e0ef.js","sourceRoot":"..","sourcesContent":["\ndocument.addEventListener('DOMContentLoaded',function(){\n    console.log(\"loading완료\");\n});"]}

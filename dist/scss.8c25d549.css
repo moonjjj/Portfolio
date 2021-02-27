@@ -77,8 +77,10 @@ body, html {
   }
   .content-first .content-header {
     padding-bottom: 10px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     transition: all 0.5s;
   }
   .content-first .content-header .img-div {
@@ -98,12 +100,13 @@ body, html {
   }
   .content-first .content-main .main-img {
     position: absolute;
-    clip: rect(0px, 508px, 370px, 0px);
+    clip: rect(0px, 100vw, 40vh, 0px);
   }
   .content-first .content-main .main-video {
     width: 80%;
     height: 60vh;
-    margin: 0 auto;
+    position: absolute;
+    left: 10%;
   }
   .content-first .content-main .greeting-main {
     top: 20%;

@@ -105,8 +105,10 @@ body,html{
         position:static;
         .content-header{
             padding-bottom:10px;
-            position:sticky;
+            position:fixed;
             top:0;
+            left:0;
+            right:0;
             transition:all .5s;
             .img-div{
                 width:70px;
@@ -127,12 +129,13 @@ body,html{
         .content-main{
             .main-img{
                 position:absolute;
-                clip: rect(0px, 508px, 370px, 0px);
+                clip: rect(0px, 100vw, 40vh, 0px);
             }
             .main-video{
                 width:80%;
                 height:60vh;
-                margin:0 auto;
+                position: absolute;
+                left:10%;
 
             }
             .greeting-main{

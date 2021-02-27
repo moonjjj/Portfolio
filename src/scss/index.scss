@@ -1,3 +1,28 @@
+//breakpoint
+$breakpoint-mobile:450px;
+$breakpoint-tablet:758px;
+$breakpoint-desktop:1024px;
+
+//mediaquery mixin
+@mixin mobile{
+    @media (min-width:#{$breakpoint-mobile}) and (max-width:#{$breakpoint-tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width:#{$breakpoint-tablet}) and (max-width:#{$breakpoint-desktop - 1px}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width:#{$breakpoint-desktop}){
+        @content;
+    }
+}
+
+
 body,html{
     margin:0;
     padding:0;
@@ -72,4 +97,15 @@ body,html{
 .content-second{
     height:100vh;
     background-color: beige;
+}
+
+//media query include
+@include mobile{//458px~757px까지
+
+}
+@include tablet{ //758~1024px까지
+
+}
+@include desktop{ //1024px이상
+
 }

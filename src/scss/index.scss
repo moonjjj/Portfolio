@@ -102,9 +102,12 @@ body,html{
 //media query include
 @include mobile{//458px~757px까지
     .content-first{
+        position:static;
         .content-header{
-            border-bottom:1px solid #d2d2d2;
             padding-bottom:10px;
+            position:sticky;
+            top:0;
+            transition:all .5s;
             .img-div{
                 width:70px;
                 height:70px;

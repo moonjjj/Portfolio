@@ -13,3 +13,19 @@ function phone(){
         console.log("tablet or desktop");
     }
 }
+
+document.addEventListener('scroll', function(){
+    //console.log(document.documentElement.scrollTop); //스크롤 움직일 때마다 console
+    var scrollEvent = document.documentElement.scrollTop;
+    var contentHeader = document.getElementById("content-header");
+   
+    if(scrollEvent>0){
+        contentHeader.style.boxShadow="0 0 15px #529cf4";
+        contentHeader.style.backgroundColor="#529cf4";
+    }
+    else if(scrollEvent===0){
+        contentHeader.style.boxShadow="none";
+        contentHeader.style.backgroundColor="#11ffee00";
+        
+    }
+});

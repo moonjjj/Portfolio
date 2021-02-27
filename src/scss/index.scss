@@ -115,13 +115,17 @@ body,html{
             }
             span{
                 font-size:18px;
-                color:#fff;
+                color:#000;
                 &:first-child::first-letter{
                     color:#000;
                 }
             }
         }
         .content-main{
+            .main-img{
+                position:absolute;
+                clip: rect(0px, 508px, 370px, 0px);
+            }
             .main-video{
                 width:80%;
                 height:60vh;

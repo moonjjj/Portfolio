@@ -86,10 +86,14 @@ body, html {
   }
   .content-first .content-header span {
     font-size: 18px;
-    color: #fff;
+    color: #000;
   }
   .content-first .content-header span:first-child::first-letter {
     color: #000;
+  }
+  .content-first .content-main .main-img {
+    position: absolute;
+    clip: rect(0px, 508px, 370px, 0px);
   }
   .content-first .content-main .main-video {
     width: 80%;

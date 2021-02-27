@@ -16,6 +16,7 @@ function phone(){
 
 document.addEventListener('scroll', function(){
     //console.log(document.documentElement.scrollTop); //스크롤 움직일 때마다 console
+    //scroll event로 스크롤이 해당 영역 될 때에 header의 글자 색깔이 바뀌게 만들기
     var scrollEvent = document.documentElement.scrollTop;
     var contentHeader = document.getElementById("content-header");
    

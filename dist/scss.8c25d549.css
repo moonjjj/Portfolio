@@ -1,6 +1,15 @@
+@keyframes down-move {
+  100% {
+    transform: translateX(100px);
+  }
+  0% {
+    transform: translateX(0px);
+  }
+}
 body, html {
   margin: 0;
   padding: 0;
+  min-width: 400px;
 }
 
 .content-first {
@@ -12,6 +21,11 @@ body, html {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s;
 }
 .content-first .content-header span {
   font-size: 25px;
@@ -26,8 +40,13 @@ body, html {
   transform: scale(1.2);
 }
 .content-first .content-header .img-div img {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.content-first .content-header .img-div img:hover {
+  transform: scale(1.1);
 }
 .content-first .content-main {
   height: 100vh;
@@ -65,10 +84,80 @@ body, html {
 .content-first .content-main .greeting-main .greeting2 {
   font-weight: 700;
 }
+.content-first #down-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s;
+  animation-delay: 0s;
+  animation-duration: 4s;
+  animation-name: down-move;
+}
 
 .content-second {
-  height: 100vh;
+  margin-top: 20vh;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.content-second .title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: #000;
+}
+.content-second .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content-second .box-container .imo-img {
+  width: 250px;
+  height: 250px;
+}
+.content-second .box-container .desc-box {
+  background-color: #529cf4;
+  width: 45%;
+  height: 20vh;
+  color: #fff;
+  padding: 25px 40px;
+  box-shadow: 0 0 3px #529cf4;
+}
+.content-second .box-container .desc-box:nth-child(2n) {
+  border-radius: 50px 50px 50px 0;
+}
+.content-second .box-container .desc-box:nth-child(2n-1) {
+  border-radius: 50px 50px 0px 50px;
+}
+.content-second .box-container .desc-box span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.content-third {
   background-color: beige;
+  height: 100vh;
+  padding-top: 20vh;
+}
+.content-third .title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: #000;
+}
+.content-third .box-inner {
+  display: flex;
+}
+.content-third .box-inner .box-container {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 757px) {

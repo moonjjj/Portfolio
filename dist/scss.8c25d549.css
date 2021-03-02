@@ -6,6 +6,12 @@
     transform: translateX(0px);
   }
 }
+.click-header {
+  transform: scale(1.2);
+  transition: all 0.3s;
+  letter-spacing: -1px;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -32,9 +38,6 @@ body, html {
   font-weight: 700;
   cursor: pointer;
   transition: all 0.15s;
-}
-.content-first .content-header span:nth-child(2) {
-  color: #fff;
 }
 .content-first .content-header span:hover, .content-first .content-header span:active {
   transform: scale(1.2);

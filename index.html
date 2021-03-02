@@ -10,15 +10,15 @@
 <body>
     <div class="content-first">
         <div class="content-header" id="content-header">
-            <span>main</span>
-            <span>history</span>
-            <div class="img-div">
+            <span onclick="scrollDiv(event)">main</span>
+            <span onclick="scrollDiv(event)">history</span>
+            <div class="img-div" onclick="scrollDiv(event)">
                 <img src="src/img/moon-logo3.gif" alt="로고" class="logo-img">
             </div>
-            <span>hobby</span>
+            <span onclick="scrollDiv(event)">hobby</span>
             <span>skill</span>
         </div>
-        <div class="content-main">
+        <div class="content-main" id="main1">
             <img src="src/img/bg-com.png" alt="메인이미지" class="main-img" id="bg-img">
             <div class="greeting-main">
                 <p class="greeting1">안녕하세요🧑🏻‍💻</p>
@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="content-second">
+    <div class="content-second" id="main2">
         <p class="title">history</p>
         <div class="box-container">
             <img src="src/img/moon-imo1.png" class="imo-img imo1" alt="얼굴 이모지1">
@@ -57,7 +57,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p>
             </div>
         </div>
-        <div class="box-container">
+        <div class="box-container" id="main3">
             <div class="desc-box">
                 <span>나눔모바일 (2020.12~2021.06)</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p>

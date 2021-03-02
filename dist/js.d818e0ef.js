@@ -134,7 +134,7 @@ function phone() {
 }
 
 document.addEventListener('scroll', function () {
-  //console.log(document.documentElement.scrollTop); //스크롤 움직일 때마다 console
+  // console.log(document.documentElement.scrollTop); //스크롤 움직일 때마다 console
   //scroll event로 스크롤이 해당 영역 될 때에 header의 글자 색깔이 바뀌게 만들기
   var scrollEvent = document.documentElement.scrollTop;
   var contentHeader = document.getElementById("content-header");
@@ -147,6 +147,29 @@ document.addEventListener('scroll', function () {
     contentHeader.style.backgroundColor = "#11ffee00";
   }
 });
+
+function scrollDiv(e) {
+  var main1 = document.getElementById("main1");
+  var main2 = document.getElementById("main2");
+  var main3 = document.getElementById("main3"); // console.log(e.target);
+
+  if (e.target.innerHTML == "main" || e.target.className == "logo-img") {
+    main1.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest"
+    });
+  } else if (e.target.innerHTML == "history") {
+    main2.scrollIntoView({
+      behavior: "smooth"
+    });
+  } else if (e.target.innerHTML == "hobby") {
+    main3.scrollIntoView({
+      behavior: "smooth",
+      inline: "end"
+    });
+  }
+}
 },{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -175,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50845" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61571" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

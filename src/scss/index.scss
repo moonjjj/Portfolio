@@ -47,6 +47,13 @@ $down-animation:"down-animation";
     }
 }
 
+//js addclass
+.click-header{
+    transform:scale(1.2);
+    transition:all .3s;
+    letter-spacing: -1px;
+}
+
 body,html{
     margin:0;
     padding:0;
@@ -66,9 +73,6 @@ body,html{
         right:0;
         transition:all .5s; 
         span{
-            &:nth-child(2){
-                color:#fff;
-            }
             &:hover, &:active{
                 transform: scale(1.2);
             }

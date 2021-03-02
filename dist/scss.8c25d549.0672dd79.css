@@ -32,6 +32,7 @@ body, html {
   left: 0;
   right: 0;
   transition: all 0.5s;
+  z-index: 5;
 }
 .content-first .content-header span {
   font-size: 25px;
@@ -110,6 +111,7 @@ body, html {
   font-weight: 700;
   letter-spacing: -3px;
   color: #000;
+  padding-bottom: 30px;
 }
 .content-second .box-container {
   display: flex;
@@ -142,7 +144,7 @@ body, html {
 
 .content-third {
   background-color: beige;
-  height: 100vh;
+  height: inherit;
   padding-top: 20vh;
 }
 .content-third .title {
@@ -152,6 +154,7 @@ body, html {
   font-weight: 700;
   letter-spacing: -3px;
   color: #000;
+  padding-bottom: 30px;
 }
 .content-third .box-inner {
   display: flex;
@@ -161,6 +164,43 @@ body, html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.content-third .box-inner .box-container .hobby-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+.content-third .box-inner .box-container .hobby-img iframe, .content-third .box-inner .box-container .hobby-img .perfume-img {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  left: 10%;
+}
+.content-third .box-inner .box-container .hobby-box {
+  font-size: 2em;
+}
+.content-third .box-inner .box-container .hobby-box span {
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.content-fourth {
+  background-color: beige;
+  height: 100vh;
+  padding-top: 20vh;
+}
+.content-fourth .title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: #000;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 757px) {

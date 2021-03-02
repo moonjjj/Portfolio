@@ -151,7 +151,8 @@ document.addEventListener('scroll', function () {
 function scrollDiv(e) {
   var main1 = document.getElementById("main1");
   var main2 = document.getElementById("main2");
-  var main3 = document.getElementById("main3"); // console.log(e.target);
+  var main3 = document.getElementById("main3");
+  var main4 = document.getElementById("main4"); // console.log(e.target);
 
   if (e.target.innerHTML == "main" || e.target.className == "logo-img") {
     main1.scrollIntoView({
@@ -161,10 +162,16 @@ function scrollDiv(e) {
     });
   } else if (e.target.innerHTML == "history") {
     main2.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
+      inline: "nearest"
     });
   } else if (e.target.innerHTML == "hobby") {
     main3.scrollIntoView({
+      behavior: "smooth",
+      inline: "end"
+    });
+  } else if (e.target.innerHTML == "skill") {
+    main4.scrollIntoView({
       behavior: "smooth",
       inline: "end"
     });
@@ -198,7 +205,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49384" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

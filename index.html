@@ -16,7 +16,7 @@
                 <img src="src/img/moon-logo3.gif" alt="로고" class="logo-img">
             </div>
             <span onclick="scrollDiv(event)">hobby</span>
-            <span>skill</span>
+            <span onclick="scrollDiv(event)">skill</span>
         </div>
         <div class="content-main" id="main1">
             <img src="src/img/bg-com.png" alt="메인이미지" class="main-img" id="bg-img">
@@ -57,7 +57,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p>
             </div>
         </div>
-        <div class="box-container" id="main3">
+        <div class="box-container">
             <div class="desc-box">
                 <span>나눔모바일 (2020.12~2021.06)</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p>
@@ -65,24 +65,32 @@
             <img src="src/img/moon-imo4.png" class="imo-img imo4" alt="얼굴 이모지4">
         </div>
     </div>
-    <div class="content-third">
+    <div class="content-third" id="main3"><!--슬라이드를 이용해서 만들기!-->
         <p class="title">hobby</p>
         <div class="box-inner">
             <div class="box-container">
-                <iframe width="400" height="400" src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="hobby-img">
+                    <iframe src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <div class="hobby-box">
-                    <span>축구</span>
+                    <span>축구 ⚽️ </span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
                 </div>
             </div>
             <div class="box-container">
-                <iframe width="400" height="400" src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="hobby-img">
+                    <img src="src/img/perfume-img.png" alt="향수 사진" class="perfume-img">
+                </div>
                 <div class="hobby-box">
-                    <span>향수</span>
+                    <span>향수 💐 </span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="content-fourth" id="main4">
+        <p class="title">skill</p>
+        html css js ts scss jquery react ...
     </div>
     <script src="src/js/index.js"></script>
 </body>

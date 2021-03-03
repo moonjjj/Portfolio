@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded',function(){
     console.log("loading완료");
     // phone();
+    // slide();
+    setInterval(slide, 2000);
 
 });
 
@@ -52,3 +54,23 @@ function scrollDiv(e){
         main4.scrollIntoView({behavior:"smooth",inline:"end"});
     }
 }
+
+
+  const SHOWING_CLASS="showing";
+  const firstSlide = document.querySelector(".box-container:first-child");
+  function slide(){
+    const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+    if(currentSlide){
+        currentSlide.classList.remove(SHOWING_CLASS);
+        const nextSlide = currentSlide.nextElementSibling;
+        if(nextSlide){
+            nextSlide.classList.add(SHOWING_CLASS);
+        }
+        else{
+            firstSlide.classList.add(SHOWING_CLASS);
+        }
+    }else{
+        firstSlide.classList.add(SHOWING_CLASS);
+    }
+  }
+ 

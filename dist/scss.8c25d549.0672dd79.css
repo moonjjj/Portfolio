@@ -12,6 +12,11 @@
   letter-spacing: -1px;
 }
 
+.showing {
+  z-index: 1;
+  opacity: 1;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -106,7 +111,7 @@ body, html {
 }
 .content-second .title {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 0;
   font-weight: 700;
   letter-spacing: -3px;
@@ -142,14 +147,19 @@ body, html {
   letter-spacing: -1px;
 }
 
+.gradient-div {
+  height: 20vh;
+  background: linear-gradient(#fff, #e9e8e6);
+}
+
 .content-third {
-  background-color: beige;
+  background-color: #e9e8e6;
   height: inherit;
   padding-top: 20vh;
 }
 .content-third .title {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 0;
   font-weight: 700;
   letter-spacing: -3px;
@@ -188,19 +198,47 @@ body, html {
   text-align: center;
 }
 
+.gradient-div2 {
+  height: 20vh;
+  background: linear-gradient(#e9e8e6, #d2d2d2);
+}
+
 .content-fourth {
-  background-color: beige;
+  background-color: #d2d2d2;
   height: 100vh;
   padding-top: 20vh;
 }
 .content-fourth .title {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 0;
   font-weight: 700;
   letter-spacing: -3px;
   color: #000;
   padding-bottom: 30px;
+}
+
+.gradient-div3 {
+  height: 30vh;
+  background: linear-gradient(#d2d2d2, #529cf4);
+}
+
+.content-footer {
+  height: 10vh;
+  background: #529cf4;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-footer .contact a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+}
+.content-footer .right {
+  margin-top: 30px;
 }
 
 @media (max-width: 757px) {

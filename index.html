@@ -6,6 +6,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="src/scss/index.scss">
     <link rel="stylesheet" stylesheet="text/css" href="dist/scss.8c25d549.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <div class="content-first">
@@ -70,13 +71,40 @@
 
     <div class="content-third" id="main3"><!--슬라이드를 이용해서 만들기!-->
         <p class="title">hobby</p>
-        <div class="box-inner" id="slider">
+        <div class="box-inner" id="slider"  data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
             <div class="box-container">
                 <div class="hobby-img">
                     <iframe src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="hobby-box">
                     <span>축구 ⚽️ </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="hobby-img">
+                    <img src="src/img/perfume-img.png" alt="향수 사진" class="perfume-img">
+                </div>
+                <div class="hobby-box">
+                    <span>향수 💐 </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="hobby-img">
+                    <img src="src/img/perfume-img.png" alt="향수 사진" class="perfume-img">
+                </div>
+                <div class="hobby-box">
+                    <span>향수 💐 </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="hobby-img">
+                    <img src="src/img/perfume-img.png" alt="향수 사진" class="perfume-img">
+                </div>
+                <div class="hobby-box">
+                    <span>향수 💐 </span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iure? Temporibus sed maxime perspiciatis error cupiditate esse aspernatur dignissimos ipsum ipsam sit eius, adipisci doloremque dolorem iure reprehenderit non dolor.</p>
                 </div>
             </div>
@@ -112,6 +140,10 @@
         </div>
     </div>
 
+
+    <!-- 슬릭을 위한 jquery&slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="src/js/index.js"></script>
 </body>
 </html>

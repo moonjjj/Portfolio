@@ -118,11 +118,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
+$(document).ready(function () {
+  console.log("hi");
+});
 document.addEventListener('DOMContentLoaded', function () {
   console.log("loading완료"); // phone();
   // slide();
-
-  setInterval(slide, 2000);
+  // setInterval(slide, 2000);
 });
 
 function phone() {
@@ -179,27 +181,80 @@ function scrollDiv(e) {
       inline: "end"
     });
   }
-}
+} //   const SHOWING_CLASS="showing";
+//   const firstSlide = document.querySelector(".box-container:first-child");
+//   function slide(){
+//     const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+//     if(currentSlide){
+//         currentSlide.classList.remove(SHOWING_CLASS);
+//         const nextSlide = currentSlide.nextElementSibling;
+//         if(nextSlide){
+//             nextSlide.classList.add(SHOWING_CLASS);
+//         }
+//         else{
+//             firstSlide.classList.add(SHOWING_CLASS);
+//         }
+//     }else{
+//         firstSlide.classList.add(SHOWING_CLASS);
+//     }
+//   }
+//slick slider
+//   $('#slider').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 3
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 1
+//         }
+//       }
+//     ]
+//   });
 
-var SHOWING_CLASS = "showing";
-var firstSlide = document.querySelector(".box-container:first-child");
 
-function slide() {
-  var currentSlide = document.querySelector(".".concat(SHOWING_CLASS));
-
-  if (currentSlide) {
-    currentSlide.classList.remove(SHOWING_CLASS);
-    var nextSlide = currentSlide.nextElementSibling;
-
-    if (nextSlide) {
-      nextSlide.classList.add(SHOWING_CLASS);
-    } else {
-      firstSlide.classList.add(SHOWING_CLASS);
+$('.box-inner').slick({
+  arrows: false,
+  autoplay: true,
+  speed: 300,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
     }
-  } else {
-    firstSlide.classList.add(SHOWING_CLASS);
-  }
-}
+  }, {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  }, {
+    breakpoint: 510,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  } // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+  ]
+});
 },{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -228,7 +283,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49384" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54730" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

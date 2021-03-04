@@ -170,7 +170,7 @@ body, html {
   display: flex;
 }
 .content-third .box-inner .box-container {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

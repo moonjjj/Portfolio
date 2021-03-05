@@ -106,7 +106,7 @@ function scrollDiv(e){
 $('.box-inner').slick({
     arrows:false,
     autoplay:true,
-    speed: 300,
+    speed: 1200,
     responsive: [
       {
         breakpoint: 1024,

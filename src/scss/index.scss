@@ -248,10 +248,53 @@ body,html{
 }
 .content-fourth{
     background-color:#d2d2d2;
-    height:100vh;
+    height:inherit;
     padding-top:20vh;
+    padding-bottom:5vh;
     .title{
         @include title;
+    }
+    table{
+        width:80%;
+        margin:0 auto;
+        box-shadow: 0 0 15px #000;
+        border-collapse: collapse;
+        background: #dee2e6;
+        tr{
+            &:first-child{
+                text-align:center;
+                font-size: 1.3em;
+                letter-spacing: -2px;
+                td{
+                    padding:20px 0;
+                }
+            }
+            .logo-td{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding:10px;
+                img{
+                    width:60px;
+                    height:60px;
+                }
+            }
+            td{
+                border-bottom: 1px solid #706f6f;
+                &:last-child{
+                    text-align: center;
+                    // text-shadow: 0 0 2px #000;
+                }
+                &:nth-child(2){
+                    padding:0 15px;
+                }
+            }
+            .star{
+                min-width:100px;
+                text-shadow: 0 0 2px #000;
+            }
+        }
     }
 }
 .gradient-div3{

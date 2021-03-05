@@ -79,6 +79,7 @@ $down-animation:"down-animation";
 body,html{
     margin:0;
     padding:0;
+    font-family: sans-serif;
     // min-width:300px;
     // width:100%;
     // overflow-x: hidden;
@@ -329,6 +330,7 @@ body,html{
 }
     .right{
         margin-top:30px;
+        text-align: center;
     }
 }
 
@@ -477,13 +479,49 @@ body,html{
             left: -44px;
         }
         .desc-box{
-            border-radius:0px;
+            border:1px solid #d2d2d2;
+            border-radius: 50px 0px 0px 50px !important;
             span{
                 font-size:1.3em;
             }
             p{
                 font-size:0.7em;
                 margin:0;
+            }
+        }
+    }
+}
+.content-third{
+    .box-inner{
+        .box-container{
+            .hobby-box{
+                span{
+                    font-size:0.9em;
+                }
+                p{
+                    font-size:0.6em;
+                }
+            }
+        }
+    }
+}
+.content-footer{
+    padding-bottom:30px;
+    height:inherit;
+    .contact{
+        display:flex;
+        flex-wrap: wrap;
+        a{
+            font-size:10px;
+            width:33%;
+            display:flex;
+            align-items:center;
+            padding:10px 0;
+            cursor: pointer;
+            img{
+                width:20px;
+                height:20px;
+                padding-right:20px;
             }
         }
     }

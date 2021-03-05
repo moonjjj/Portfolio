@@ -20,6 +20,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .content-first {
@@ -279,6 +280,7 @@ body, html {
 }
 .content-footer .right {
   margin-top: 30px;
+  text-align: center;
 }
 
 @media (max-width: 757px) {
@@ -413,7 +415,8 @@ body, html {
     left: -44px;
   }
   .content-second .box-container .desc-box {
-    border-radius: 0px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50px 0px 0px 50px !important;
   }
   .content-second .box-container .desc-box span {
     font-size: 1.3em;
@@ -421,6 +424,35 @@ body, html {
   .content-second .box-container .desc-box p {
     font-size: 0.7em;
     margin: 0;
+  }
+
+  .content-third .box-inner .box-container .hobby-box span {
+    font-size: 0.9em;
+  }
+  .content-third .box-inner .box-container .hobby-box p {
+    font-size: 0.6em;
+  }
+
+  .content-footer {
+    padding-bottom: 30px;
+    height: inherit;
+  }
+  .content-footer .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-footer .contact a {
+    font-size: 10px;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .content-footer .contact a img {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
   }
 }
 

@@ -275,6 +275,7 @@ body,html{
                 align-items: center;
                 justify-content: center;
                 padding:10px;
+                margin-bottom: -1px;
                 img{
                     width:60px;
                     height:60px;
@@ -370,6 +371,64 @@ body,html{
                 .greeting2{
                     font-size:25px;
                     letter-spacing: -2px;
+                }
+            }
+        }
+    }
+    .content-second{
+        .box-container{
+            display:flex;
+            flex-direction: column;
+            position: relative;
+            .imo-img{
+                position: absolute;
+                top: 0px;
+                width: 130px;
+                height: 130px;
+                left: 0;
+            }
+            .imo3{
+                width: 110px;
+                height: 110px;
+                top:20px;
+            }
+            .desc-box{
+                width:80%;
+                margin:60px auto;
+                text-align: center;
+            }
+        }
+    }
+    .content-third{
+        .box-container{
+            .hobby-box{
+                width:80%;
+                margin:0 auto;
+                span{
+                    font-size:1em;
+                }
+                p{
+                    font-size:0.7em;
+                }
+            }
+        }
+    }
+    .content-fourth{
+        table{
+            width:90%;
+            tr{
+                border-collapse: collapse;
+                height:70px;
+                .logo-td{
+                    height:inherit;
+                    span{
+                        display:none;
+                    }
+                }
+                td{
+                    &:nth-child(2){
+                        overflow: scroll;
+                    }
                 }
             }
         }

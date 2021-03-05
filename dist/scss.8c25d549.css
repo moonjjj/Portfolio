@@ -239,6 +239,7 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  margin-bottom: -1px;
 }
 .content-fourth table tr .logo-td img {
   width: 60px;
@@ -328,6 +329,57 @@ body, html {
   .content-first .content-main .greeting-main .greeting2 {
     font-size: 25px;
     letter-spacing: -2px;
+  }
+
+  .content-second .box-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .content-second .box-container .imo-img {
+    position: absolute;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    left: 0;
+  }
+  .content-second .box-container .imo3 {
+    width: 110px;
+    height: 110px;
+    top: 20px;
+  }
+  .content-second .box-container .desc-box {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  .content-third .box-container .hobby-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-third .box-container .hobby-box span {
+    font-size: 1em;
+  }
+  .content-third .box-container .hobby-box p {
+    font-size: 0.7em;
+  }
+
+  .content-fourth table {
+    width: 90%;
+  }
+  .content-fourth table tr {
+    border-collapse: collapse;
+    height: 70px;
+  }
+  .content-fourth table tr .logo-td {
+    height: inherit;
+  }
+  .content-fourth table tr .logo-td span {
+    display: none;
+  }
+  .content-fourth table tr td:nth-child(2) {
+    overflow: scroll;
   }
 }
 

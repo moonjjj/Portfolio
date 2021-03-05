@@ -79,7 +79,7 @@ $down-animation:"down-animation";
 body,html{
     margin:0;
     padding:0;
-    min-width:300px;
+    // min-width:300px;
     // width:100%;
     overflow-x: hidden;
 }
@@ -455,6 +455,9 @@ body,html{
             .greeting1{
                 font-size:2em;
             }
+            span{
+                font-size:1em;
+            }
         }
         .main-img{
             width:100%;
@@ -464,7 +467,7 @@ body,html{
 }
 .content-second{
     .box-container{
-        width:70%;
+        width:83%;
         margin:0 auto;
         .imo-img{
             position: absolute;
@@ -472,6 +475,16 @@ body,html{
             width: 130px;
             height: 130px;
             left: -44px;
+        }
+        .desc-box{
+            border-radius:0px;
+            span{
+                font-size:1.3em;
+            }
+            p{
+                font-size:0.7em;
+                margin:0;
+            }
         }
     }
 }

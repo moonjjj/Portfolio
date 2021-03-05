@@ -20,7 +20,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-width: 300px;
   overflow-x: hidden;
 }
 
@@ -395,13 +394,16 @@ body, html {
   .content-first .content-main .greeting-main .greeting1 {
     font-size: 2em;
   }
+  .content-first .content-main .greeting-main span {
+    font-size: 1em;
+  }
   .content-first .content-main .main-img {
     width: 100%;
     margin: 0 auto;
   }
 
   .content-second .box-container {
-    width: 70%;
+    width: 83%;
     margin: 0 auto;
   }
   .content-second .box-container .imo-img {
@@ -410,6 +412,16 @@ body, html {
     width: 130px;
     height: 130px;
     left: -44px;
+  }
+  .content-second .box-container .desc-box {
+    border-radius: 0px;
+  }
+  .content-second .box-container .desc-box span {
+    font-size: 1.3em;
+  }
+  .content-second .box-container .desc-box p {
+    font-size: 0.7em;
+    margin: 0;
   }
 }
 

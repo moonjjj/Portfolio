@@ -20,7 +20,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-width: 400px;
+  min-width: 300px;
+  overflow-x: hidden;
 }
 
 .content-first {
@@ -380,6 +381,28 @@ body, html {
   }
   .content-fourth table tr td:nth-child(2) {
     overflow: scroll;
+  }
+}
+@media (max-width: 449px) {
+  .content-first .content-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content-first .content-main .main-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-second .box-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .content-second .box-container .imo-img {
+    position: absolute;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    left: -44px;
   }
 }
 

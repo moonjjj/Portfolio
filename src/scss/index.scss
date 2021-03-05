@@ -430,14 +430,17 @@ body,html{
                 height:70px;
                 .logo-td{
                     height:inherit;
+                    display:table-cell;
                     span{
                         display:none;
                     }
                 }
                 td{
                     &:nth-child(2){
-                        overflow: scroll;
+                        font-size:8px;
                     }
+                    font-size:8px;
+                    
                 }
             }
         }
@@ -448,6 +451,11 @@ body,html{
     .content-main{
         width:100%;
         margin:0 auto;
+        .greeting-main{
+            .greeting1{
+                font-size:2em;
+            }
+        }
         .main-img{
             width:100%;
             margin:0 auto;

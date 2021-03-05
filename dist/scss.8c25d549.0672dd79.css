@@ -375,18 +375,25 @@ body, html {
   }
   .content-fourth table tr .logo-td {
     height: inherit;
+    display: table-cell;
   }
   .content-fourth table tr .logo-td span {
     display: none;
   }
+  .content-fourth table tr td {
+    font-size: 8px;
+  }
   .content-fourth table tr td:nth-child(2) {
-    overflow: scroll;
+    font-size: 8px;
   }
 }
 @media (max-width: 449px) {
   .content-first .content-main {
     width: 100%;
     margin: 0 auto;
+  }
+  .content-first .content-main .greeting-main .greeting1 {
+    font-size: 2em;
   }
   .content-first .content-main .main-img {
     width: 100%;

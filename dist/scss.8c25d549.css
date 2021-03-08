@@ -166,6 +166,25 @@ body, html {
   color: #000;
   padding-bottom: 30px;
 }
+.content-third .control-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.content-third .control-box img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.1s;
+}
+.content-third .control-box img:nth-child(2) {
+  width: 45px;
+  height: 45px;
+}
+.content-third .control-box img:hover {
+  transform: scale(1.1);
+}
 .content-third .box-inner {
   display: flex;
 }

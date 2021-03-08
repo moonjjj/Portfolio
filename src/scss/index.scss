@@ -219,6 +219,25 @@ body,html{
     .title{
         @include title;
     }
+    .control-box{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        padding:20px 0;
+        cursor: pointer;
+        img{
+            width:30px;
+            height:30px;
+            transition:all .1s;
+            &:nth-child(2){
+                width:45px;
+                height:45px;
+            }
+            &:hover{
+                transform:scale(1.1);
+            }
+        }
+    }
     .box-inner{
         display:flex;
         .box-container{

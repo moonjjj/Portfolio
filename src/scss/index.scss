@@ -226,6 +226,7 @@ body,html{
             margin:0 auto;
             display:flex;
             flex-direction: column;
+            padding:0 25px;
             .hobby-img{
                 position:relative;
                 width:100%;
@@ -244,9 +245,13 @@ body,html{
                 font-size:2em;
                 span{
                     font-weight:700;
-                    font-size:1.5em;
+                    font-size:1em;
                     letter-spacing: -2px;
                     text-align: center;
+                }
+                p{
+                    font-size:0.6em;
+                    letter-spacing: -1px;
                 }
             }
         }
@@ -314,6 +319,7 @@ body,html{
 }
 .content-footer{
     height:10vh;
+    padding-bottom:30px;
     background:#529cf4;
     color:#fff;
     display:flex;

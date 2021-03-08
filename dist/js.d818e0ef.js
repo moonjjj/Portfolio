@@ -229,7 +229,12 @@ function scrollDiv(e) {
 $('.box-inner').slick({
   arrows: false,
   autoplay: true,
-  speed: 1200,
+  speed: 2000,
+  dotsClass: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   responsive: [{
     breakpoint: 1024,
     settings: {
@@ -283,7 +288,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59807" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58347" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -150,6 +150,13 @@ ul {
   font-weight: 700;
   letter-spacing: -1px;
 }
+.content-second .box-container .desc-box p a {
+  color: #fff;
+  font-weight: 700;
+}
+.content-second .box-container .desc-box p a:visited {
+  color: #fff;
+}
 
 .gradient-div {
   height: 20vh;
@@ -396,6 +403,11 @@ ul {
     width: 80%;
     margin: 60px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-second .box-container .desc-box span:nth-child(2) {
+    font-size: 20px;
   }
 
   .content-third .box-container .hobby-box {
@@ -460,13 +472,16 @@ ul {
   .content-second .box-container .desc-box {
     border: 1px solid #d2d2d2;
     border-radius: 50px 0px 0px 50px !important;
+    display: flex;
+    flex-direction: column;
   }
   .content-second .box-container .desc-box span {
     font-size: 1.3em;
   }
   .content-second .box-container .desc-box p {
-    font-size: 0.7em;
+    font-size: 1em;
     margin: 0;
+    padding: 20px 0;
   }
 
   .content-third .box-inner .box-container .hobby-box span {

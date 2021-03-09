@@ -23,6 +23,10 @@ body, html {
   font-family: sans-serif;
 }
 
+ul {
+  display: none !important;
+}
+
 .content-first {
   height: 100vh;
   position: relative;
@@ -174,13 +178,9 @@ body, html {
   cursor: pointer;
 }
 .content-third .control-box img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   transition: all 0.1s;
-}
-.content-third .control-box img:nth-child(2) {
-  width: 45px;
-  height: 45px;
 }
 .content-third .control-box img:hover {
   transform: scale(1.1);
@@ -210,6 +210,7 @@ body, html {
 }
 .content-third .box-inner .box-container .hobby-box {
   font-size: 2em;
+  position: relative;
 }
 .content-third .box-inner .box-container .hobby-box span {
   font-weight: 700;
@@ -220,6 +221,20 @@ body, html {
 .content-third .box-inner .box-container .hobby-box p {
   font-size: 0.6em;
   letter-spacing: -1px;
+}
+.content-third .box-inner .box-container .hobby-box .quoto1 {
+  position: absolute;
+  top: 55px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+}
+.content-third .box-inner .box-container .hobby-box .quoto2 {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
 }
 
 .gradient-div2 {
@@ -297,6 +312,9 @@ body, html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.content-footer .contact img {
+  margin: 0 5px;
 }
 .content-footer .contact a {
   text-decoration: none;

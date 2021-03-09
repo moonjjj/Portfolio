@@ -84,6 +84,9 @@ body,html{
     // width:100%;
     // overflow-x: hidden;
 }
+ul{
+    display:none !important;
+}
 .content-first{
     height:100vh;
     position: relative;
@@ -226,13 +229,13 @@ body,html{
         padding:20px 0;
         cursor: pointer;
         img{
-            width:30px;
-            height:30px;
+            width:50px;
+            height:50px;
             transition:all .1s;
-            &:nth-child(2){
-                width:45px;
-                height:45px;
-            }
+            // &:nth-child(2){
+            //     width:45px;
+            //     height:45px;
+            // }
             &:hover{
                 transform:scale(1.1);
             }
@@ -262,6 +265,7 @@ body,html{
             }
             .hobby-box{
                 font-size:2em;
+                position:relative;
                 span{
                     font-weight:700;
                     font-size:1em;
@@ -271,6 +275,20 @@ body,html{
                 p{
                     font-size:0.6em;
                     letter-spacing: -1px;
+                }
+                .quoto1{
+                    position:absolute;
+                    top:55px;
+                    left:-15px;
+                    width:15px;
+                    height:15px;
+                }
+                .quoto2{
+                    position:absolute;
+                    bottom:20px;
+                    right:0px;
+                    width:15px;
+                    height:15px;
                 }
             }
         }
@@ -346,7 +364,9 @@ body,html{
     align-items:center;
     flex-direction: column;
     .contact{
-        
+    img{
+        margin:0 5px;
+    }
     a{
         text-decoration: none;
         color:#fff;

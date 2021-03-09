@@ -76,20 +76,11 @@
     <div class="content-third" id="main3"><!--슬라이드를 이용해서 만들기!-->
         <p class="title">hobby</p>
         <div class="control-box">
-            <img src="/left-arrow.563a49b0.png" alt="왼쪽화살표" class="control-icon">
-            <img src="/pause-icon.d48a820a.png" alt="play pause" class="control-icon">
-            <img src="/right-arrow.2b5852a8.png" alt="오른쪽화살표" class="control-icon">
+            <img src="/left-arrow.563a49b0.png" alt="왼쪽화살표" class="control-icon" onclick="controlSlide(event);">
+            <!-- <img src="src/img/pause-icon.png" alt="play pause" class="control-icon do-pause"> -->
+            <img src="/right-arrow.2b5852a8.png" alt="오른쪽화살표" class="control-icon" onclick="controlSlide(event);">
         </div>
         <div class="box-inner" id="slider" data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 4}">
-            <div class="box-container">
-                <div class="hobby-img">
-                    <iframe src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
-                <div class="hobby-box">
-                    <span>축구 ⚽️ </span>
-                    <p>축구를 하는 것도 좋아하고, 보는 것도 좋아합니다! 제일 좋아하는 팀은 토트넘 훗스퍼이고, 제일 좋아하는 선수는 손흥민 선수, 레길론 선수입니다.</p>
-                </div>
-            </div>
             <div class="box-container">
                 <div class="hobby-img">
                     <img src="/perfume-img.a2f0d9a9.png" alt="향수 사진" class="perfume-img">
@@ -97,6 +88,8 @@
                 <div class="hobby-box">
                     <span>향수 💐 </span>
                     <p>어려서부터 향이 좋았습니다. 그래서인지 향수에 대해 관심이 많았고, 한 때 조향사를 꿈꿨습니다. 제일 좋아하는 향수는 메종마르지엘라의 레이지선데이모닝입니다.</p>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
                 </div>
             </div>
             <div class="box-container">
@@ -106,6 +99,19 @@
                 <div class="hobby-box">
                     <span>코딩 🧑🏻‍💻 </span>
                     <p>무언가 만드는 것, 꾸미는 것이 재밌습니다. 그것에 희열을 느끼고 열심히 공부 중 입니다.</p>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="hobby-img">
+                    <iframe src="https://www.youtube.com/embed/uSIe9CW9rv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+                <div class="hobby-box">
+                    <span>축구 ⚽️ </span>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <p>축구를 하는 것도 좋아하고, 보는 것도 좋아합니다! 제일 좋아하는 팀은 토트넘 훗스퍼이고, 제일 좋아하는 선수는 손흥민 선수, 레길론 선수입니다.</p>
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
                 </div>
             </div>
             <div class="box-container">
@@ -115,6 +121,8 @@
                 <div class="hobby-box">
                     <span>맛집탐방 🍱 </span>
                     <p>맛집을 찾아다니는 것을 좋아합니다. 맛있는 것을 먹으면 기분이 좋고, 행복감을 느낍니다! 제일 좋아하는 음식점은 홍대개미입니다. </p>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
                 </div>
             </div>
             <div class="box-container">
@@ -124,6 +132,8 @@
                 <div class="hobby-box">
                     <span>디자인 🎨 </span>
                     <p>최근들어 생긴 흥미입니다. 퍼블리싱을 하다보니 자연스레 눈길이 가게되었고, 이곳저곳 예술적인 작품들을 찾아보니 재밌어서 취미가 되었습니다.</p>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
                 </div>
             </div>
             <div class="box-container">
@@ -132,12 +142,14 @@
                 </div>
                 <div class="hobby-box">
                     <span>전자기기 💻 </span>
+                    <img src="/quoto1-icon.970d1bd2.png" alt="따옴표" class="quoto1">
+                    <img src="/quoto2-icon.9f7e5978.png" alt="따옴표" class="quoto2">
                     <p>전자기기를 모으고, 조작하는 것을 좋아합니다. 각종 새로운 테크소식을 즐겨 보는 편입니다. 제일 좋아하는 IT회사는 애플입니다.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="gradient-div2"></div>
     
     <div class="content-fourth" id="main4">

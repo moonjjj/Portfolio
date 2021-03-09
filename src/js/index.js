@@ -37,6 +37,25 @@ document.addEventListener('scroll', function(){
     }
 });
 
+function controlSlide(e){
+  if(e.target.alt==='왼쪽화살표'){
+    $('.box-inner').slick('slickPrev');
+  }
+  else if(e.target.alt==='오른쪽화살표'){
+    $('.box-inner').slick('slickNext');
+  }
+}
+// $('.do-pause').click(function(){
+//   console.log('click');
+//   $('.do-pause').toggleClass('.do-play');
+//   if($('.do-pause').hasClass('.do-play') === true){
+//     $('.do-play').attr('src','./src/img/play-icon.png');
+//     $('.box-inner').slick('slickPlay');
+//   }else{
+//     $('.do-pause').attr('src','./src/img/pause-icon.png');
+//     $('.box-inner').slick('slickPause');
+//   }
+// });
 function scrollDiv(e){
     var main1 = document.getElementById("main1");
     var main2 = document.getElementById("main2");
@@ -108,8 +127,7 @@ $('.box-inner').slick({
     autoplay:true,
     speed: 2000,
     dotsClass:false,
-    pauseOnFocus:false,
-    pauseOnHover:false,
+    pauseOnFocus:true,
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [

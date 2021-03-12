@@ -462,6 +462,7 @@ ul{
                 width:80%;
                 margin:60px auto;
                 text-align: center;
+                height:inherit;
                 display:flex;
                 flex-direction: column;
                 span{
@@ -600,3 +601,26 @@ ul{
 }
 
 //<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, est ipsum voluptates assumenda cumque odio quae culpa. Officiis totam nihil dolorum iusto ducimus quae eligendi repudiandae ipsum soluta minus.</p>
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+  }
+  .sa-right {
+    transform: translate(-100px, 0);
+  }
+  .sa-left {
+    transform: translate(100px, 0);
+  }
+  .sa-up {
+    transform: translate(0, 100px);
+  }
+  .sa-down {
+    transform: translate(0, -100px);
+  }
+  .sa-scaleUp {
+    transform: scale(.5);
+  }
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
